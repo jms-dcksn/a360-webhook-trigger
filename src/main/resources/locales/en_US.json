@@ -1,0 +1,4 @@
+{
+	"label": "Webhook Trigger",
+	"description": "Trigger bot with GET or POST request to the bot runner device"
+}
