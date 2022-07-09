@@ -67,7 +67,7 @@ public class webhookTrigger {
                 response = "Your bot was triggered".getBytes();
                 httpExchange.sendResponseHeaders(200, response.length);
             }
-            if ("POST".equals(httpExchange.getRequestMethod())) {
+            else if ("POST".equals(httpExchange.getRequestMethod())) {
                 InputStreamReader isr = new InputStreamReader(httpExchange.getRequestBody(), "utf-8");
                 BufferedReader br = new BufferedReader(isr);
                 int b;
